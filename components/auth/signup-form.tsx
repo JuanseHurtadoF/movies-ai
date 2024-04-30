@@ -1,10 +1,10 @@
-import Link from "next/link";
-import { signUp } from "@/app/api/auth/actions";
-import AuthButton from "@/components/ui/auth-button";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import Link from 'next/link'
+import { signUp } from '@/app/api/auth/actions'
+import AuthButton from '@/components/ui/auth-button'
+import Image from 'next/image'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 
 export function SignUpForm() {
   return (
@@ -23,6 +23,7 @@ export function SignUpForm() {
                 <Label htmlFor="email">Email</Label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="m@example.com"
                   required
@@ -38,17 +39,13 @@ export function SignUpForm() {
                     Forgot your password?
                   </Link>
                 </div>
-                <Input id="password" type="password" required />
+                <Input name="password" id="password" type="password" required />
               </div>
               <AuthButton label="Sign up" />
-
-              {/* <Button variant="outline" className="w-full">
-              Login with Google
-            </Button> */}
             </div>
           </form>
           <div className="mt-4 text-center text-sm">
-            Already have an account?{" "}
+            Already have an account?{' '}
             <Link href="" className="underline">
               Sign in
             </Link>
@@ -65,5 +62,5 @@ export function SignUpForm() {
         />
       </div>
     </div>
-  );
+  )
 }

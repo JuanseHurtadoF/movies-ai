@@ -8,6 +8,7 @@ module.exports = {
         port: '',
         pathname: '**'
       }
-    ]
+    ],
+    domains: ['sgpjkxksgzwrdasxhhnz.supabase.co']
   }
 }

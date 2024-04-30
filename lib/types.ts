@@ -17,6 +17,23 @@ export type ServerActionResult<Result> = Promise<
     }
 >
 
+export interface Movie {
+  title: string
+  poster_key: string
+  description: string
+  rating: string
+  movie_id: number
+}
+
+export interface Search {
+  search: string,
+  result: Movie[]
+}
+
+export interface MovieProps {
+  movies: Movie[]
+}
+
 export interface Session {
   user: {
     id: string

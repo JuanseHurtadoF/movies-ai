@@ -36,24 +36,24 @@ export function ChatPanel({
   const exampleMessages = [
     {
       heading: 'What are the',
-      subheading: 'trending stocks today?',
-      message: `What are the trending stocks today?`
+      subheading: 'trending movies today?',
+      message: `What are the movies today?`
     },
     {
-      heading: 'What is the price of',
-      subheading: '$MSFT right now?',
-      message: 'What is the price of $MSFT right now?'
-    },
-    {
-      heading: 'I would like to buy',
-      subheading: '42 $APPL',
-      message: `I would like to buy 42 stocks of $APPL`
-    },
-    {
-      heading: 'What are some',
-      subheading: `recent events about $NVDA?`,
-      message: `What are some recent events about $NVDA?`
+      heading: 'Movies to watch',
+      subheading: 'with my kids',
+      message: `Movies to watch with my kids`
     }
+    // {
+    //   heading: 'I would like to buy',
+    //   subheading: '42 $APPL',
+    //   message: `I would like to buy 42 stocks of $APPL`
+    // },
+    // {
+    //   heading: 'What are some',
+    //   subheading: `recent events about $NVDA?`,
+    //   message: `What are some recent events about $NVDA?`
+    // }
   ]
 
   return (
@@ -119,7 +119,6 @@ export function ChatPanel({
 
         <div className="space-y-4 border-t bg-background px-4 py-2 shadow-lg sm:rounded-t-xl sm:border md:py-4">
           <PromptForm input={input} setInput={setInput} />
-          <FooterText className="hidden sm:block" />
         </div>
       </div>
     </div>

@@ -40,6 +40,7 @@ export const signUp = async (formData: FormData) => {
   })
 
   if (error) {
+    console.log(error)
     return redirect('/signup?message=Could not authenticate user')
   }
   return redirect('/')

@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic'
 import { StockSkeleton } from './stock-skeleton'
 import { StocksSkeleton } from './stocks-skeleton'
-import { EventsSkeleton } from './events-skeleton'
+import { EventsSkeleton } from './movies-skeleton'
 
 export { spinner } from './spinner'
 export { BotCard, BotMessage, SystemMessage } from './message'
